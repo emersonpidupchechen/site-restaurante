@@ -3,51 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Gosto alegre</title>
+  <title>Restaurante Gosto Alegre</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Restaurante Gosto alegre</h1>
-    <p>Comida feita com amor e sabor!</p>
+  <header class="header">
+    <h1>Restaurante Gosto Alegre</h1>
+    <p>Sabores que alegram o seu dia!</p>
   </header>
-
-  <section id="menu">
-    <h2>Cardápio</h2>
-    <ul>
-      <li>Batata fritas com cheddar - R$ 39,90</li>
-      <img src="./image.png" alt="Batata fritas com cheddar">
-      <li>Bife acebolado - R$ 30,90</li>
-      <li>Estrogonogofe - R$ 28,90</li>
-      <li>Torta de morango - R$ 15,90</li>
-    </ul>
-  </section>
-<section id="localizacao" style="text-align: center; margin: 20px;">
-  <h2>Localização do Restaurante Gosto Alegre</h2>
-  <img src="https://images.unsplash.com/photo-1555992336-03a23c4a7f3a?auto=format&fit=crop&w=800&q=80" 
-    alt="Restaurante Gosto Alegre" 
-    style="width: 80%; max-width: 600px; border-radius: 10px; margin-bottom: 20px;">
-  <p style="font-size: 1.2em; font-weight: bold;">Rua São José, 173 - Centro, Cidade X</p>
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.63330968450012!3d-23.550520184686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0a1a1a1a1%3A0x123456789abcdef!2sRua%20S%C3%A3o%20Jos%C3%A9%2C%20173%20-%20Centro%2C%20Cidade%20X!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
-    width="80%" 
-    height="350" 
-    style="border:0; border-radius: 10px;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade"
-    title="Mapa do Restaurante Gosto Alegre"
-</section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Telefone: (43) 88888-9999</p>
-    <p>Email: contato@Gostoalegre.com</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Restaurante Gostoalegre</p>
+  <main class="main-content">
+    <section class="pratos-section">
+      <h2>Nossos Pratos Especiais</h2>
+      <div class="pratos-container">
+        <div class="prato-card">
+          <img src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Colorful%20Brazilian%20feijoada%20with%20black%20beans%20pork%20and%20sausages%20served%20in%20clay%20pot&id=prato-feijoada-001" 
+               alt="Feijoada completa com feijão preto, carnes suínas e acompanhamentos tradicionais" 
+               class="prato-imagem">
+          <h3>Feijoada Completa</h3>
+          <p>Nosso prato tradicional com feijão preto, linguiças, carne seca e acompanhamentos</p>
+          <span class="preco">R$ 42,90</span>
+        </div>
+        <div class="prato-card">
+          <img src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Grilled%20picanha%20steak%20with%20garlic%20and%20herbs%20served%20with%20rice%20and%20beans&id=prato-picanha-001" 
+               alt="Picanha grelhada ao ponto com alho e ervas, acompanhada de arroz e feijão" 
+               class="prato-imagem">
+          <h3>Picanha na Brasa</h3>
+          <p>Picanha premium grelhada na brasa com tempero especial da casa</p>
+          <span class="preco">R$ 56,90</span>
+        </div>
+        <div class="prato-card">
+          <img src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Moqueca%20de%20peixe%20with%20coconut%20milk%20palm%20oil%20and%20vegetables%20in%20clay%20pot&id=prato-moqueca-001" 
+               alt="Moqueca de peixe com leite de coco, azeite de dendê e legumes frescos" 
+               class="prato-imagem">
+          <h3>Moqueca de Peixe</h3>
+          <p>Peixe fresco cozido no leite de coco com azeite de dendê e temperos</p>
+          <span class="preco">R$ 48,90</span>
+        </div>
+        <div class="prato-card">
+          <img src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Brazilian%20churrasco%20mixed%20grill%20with%20various%20meats%20and%20sausages&id=prato-churrasco-001" 
+               alt="Rodízio de carnes com variados cortes bovinos, suínos e linguiças assadas" 
+               class="prato-imagem">
+          <h3>Rodízio de Carnes</h3>
+          <p>Variedade de cortes especiais no sistema de rodízio com acompanhamentos</p>
+          <span class="preco">R$ 79,90</span>
+        </div>
+      </div>
+    </section>
+    <section class="localizacao-section">
+      <h2>Nossa Localização</h2>
+      <p class="endereco">Rua São José, 173 - Centro, Cidade X</p>
+      <img src="https://placeholder-image-service.onrender.com/image/600x300?prompt=Map%20showing%20restaurant%20location%20pin%20on%20Sao%20Jose%20Street%20downtown%20area&id=localizacao-mapa-001" 
+           alt="Mapa mostrando a localização do Restaurante Gosto Alegre no centro da cidade" 
+           class="mapa-imagem">
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Restaurante Gosto Alegre - Todos os direitos reservados</p>
   </footer>
-
 </body>
 </html>
